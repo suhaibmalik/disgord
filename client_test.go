@@ -354,6 +354,7 @@ func TestClient_System(t *testing.T) {
 		for _, channel := range guild.Channels {
 			cachedChannel, err := cache.GetChannel(channel.ID)
 			if err != nil {
+				fmt.Println(err)
 				t.Error("channel was not cached on guild create", err)
 			} else if cachedChannel == nil {
 				t.Error("cache returned a nil value for channel")
