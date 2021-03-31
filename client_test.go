@@ -4,6 +4,7 @@ package disgord
 
 import (
 	"context"
+	"fmt"
 	"io/ioutil"
 	"os"
 	"path/filepath"
